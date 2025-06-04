@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Delicious food</string>
+
+    <string name="empty">Empty</string>
+
+
+    <string name="recipes_tab">Recipes</string>
+    <string name="save">Save</string>
+    <string name="protein">Protein</string>
+    <string name="carbs">Carbs</string>
+    <string name="fat">Fat</string>
+    <string name="calories">Calories</string>
+    <string name="glutenFree">Gluten Free</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="vegan">Vegan</string>
+    <string name="dairyFree">Dairy Free</string>
+    <string name="veryHealthy">Very Healthy</string>
+    <string name="cheap">Cheap</string>
+    <string name="veryPopular">Very Popular</string>
+    <string name="sustainable">Sustainable</string>
+    <string name="minutes">Minutes</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="method">Method</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Find recipes…</string>
+    <string name="remove">remove</string>
+    <string name="add">add</string>
+    <string name="book_mark_empty">The book mark list is empty, let\'s start add some!</string>
+    <string name="ops">Ops!</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="no_search_result">No search result</string>
+    <string name="saved">Saved</string>
+    <string name="feature_tab">Feature</string>
+
+
+    <string name="remove_item">Remove Item</string>
+
+</resources>

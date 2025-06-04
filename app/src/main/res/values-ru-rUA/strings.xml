@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_tab">Избраное</string>
+    <string name="recipes_tab">Рецепты</string>
+    <string name="protein">Протеин</string>
+    <string name="carbs">Углеводы</string>
+    <string name="fat">Жиры</string>
+    <string name="calories">Калорий</string>
+    <string name="glutenFree">Не содержит глютен</string>
+    <string name="vegetarian">Вегетарианский</string>
+    <string name="vegan">Веганский</string>
+    <string name="dairyFree">Без молока</string>
+    <string name="veryHealthy">Очень здоровый</string>
+    <string name="cheap">Дешевый</string>
+    <string name="veryPopular">Очень популярный</string>
+    <string name="sustainable">Стабильный</string>
+    <string name="minutes">Минуты</string>
+    <string name="ingredients">Ингредиенты</string>
+    <string name="method">Описание</string>
+    <string name="search">Поиск</string>
+    <string name="search_hint">Найдите рецепты ...</string>
+    <string name="remove">удалить</string>
+    <string name="add">добавить</string>
+    <string name="book_mark_empty">Список закладок пуст, давайте начнем добавлять!</string>
+    <string name="ops">Упс!</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
+    <string name="no_search_result">Нет результатов поиска</string>
+    <string name="saved">Сохранено</string>
+    <string name="empty">Пусто</string>
+    <string name="remove_item">"Удалить "</string>
+    <string name="app_name">Вкусная еда</string>
+    <string name="save">Сохранить</string>
+</resources>
