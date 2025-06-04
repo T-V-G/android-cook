@@ -11,4 +11,5 @@ interface CharactersRepository {
     fun getCharacterById(id: Int): Flow<RecipesItem>
     fun addFavoriteStatus(listCharacter: List<RecipesItem>): Flow<List<RecipesItem>>
     fun updateFavorite(recipe: RecipesItem): Flow<Boolean>
+    fun searchRecipes(query: String): Flow<List<RecipesItem>>
 }

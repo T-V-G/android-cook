@@ -11,6 +11,7 @@ import com.example.deliciousfood.domain.usecase.AddFavoriteToListUseCase
 import com.example.deliciousfood.domain.usecase.GetCharacterListUseCase
 import com.example.deliciousfood.domain.usecase.GetCharacterUseCase
 import com.example.deliciousfood.domain.usecase.GetFavoriteListUseCase
+import com.example.deliciousfood.domain.usecase.SearchRecipesUseCase
 import com.example.deliciousfood.domain.usecase.UpdateFavoriteUseCase
 
 @Module
@@ -36,4 +37,8 @@ object UseCaseModule {
     @Provides
     @ViewModelScoped
     fun provideUpdateFavoriteUseCase(repo: CharactersRepository) = UpdateFavoriteUseCase(repo)
+
+    @Provides
+    @ViewModelScoped
+    fun provideSearchRecipesUseCase(repo: CharactersRepository) = SearchRecipesUseCase(repo)
 }

@@ -12,6 +12,7 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
+import retrofit2.http.Query
 
 open class CharactersRepositoryImpl(private val api: DelFoodApi , private val db: AppDatabase) :
     CharactersRepository {
@@ -44,5 +45,7 @@ open class CharactersRepositoryImpl(private val api: DelFoodApi , private val db
         .map { db.characterDao().insert(it) }
         .map { it != 0L }
 
-
+    override fun searchRecipes(query: String): Flow<List<RecipesItem>> = flow {
+        emit(api.searchRecipes(query = query, tags = "", number = 30).results)
+    }.map { recipes -> recipes.map { it.toUiModel() } }
 }

@@ -23,6 +23,7 @@ import com.example.deliciousfood.ui.detail.RecipeDetails
 import com.example.deliciousfood.ui.favorite.FavoriteScreen
 import com.example.deliciousfood.ui.home.DestinationBar
 import com.example.deliciousfood.ui.list.ListScreen
+import com.example.deliciousfood.ui.search.SearchScreen
 import com.example.deliciousfood.ui.utils.backHandler
 
 sealed class NavScreens(val route: String) {
@@ -48,9 +49,10 @@ fun NavGraph(startDestination: NavScreens = NavScreens.MAIN) {
 }
 
 
-enum class BottomNavTabs(@StringRes val label: Int , val icon: Int) {
-    LIST(R.string.recipes_tab , R.drawable.ic_recipes) ,
-    FAVORITE(R.string.feature_tab , R.drawable.ic_heart) ,
+enum class BottomNavTabs(@StringRes val label: Int, val icon: Int) {
+    LIST(R.string.recipes_tab, R.drawable.ic_recipes),
+    SEARCH(R.string.search, R.drawable.ic_search), // Add this line
+    FAVORITE(R.string.feature_tab, R.drawable.ic_heart),
 }
 
 @Composable
@@ -107,6 +109,11 @@ fun NavScreen(
             BottomNavTabs.LIST -> ListScreen(
                 hiltViewModel() ,
                 actions.moveDetail ,
+                modifier
+            )
+            BottomNavTabs.SEARCH -> SearchScreen( // Add this case
+                hiltViewModel(),
+                actions.moveDetail,
                 modifier
             )
             BottomNavTabs.FAVORITE -> FavoriteScreen(

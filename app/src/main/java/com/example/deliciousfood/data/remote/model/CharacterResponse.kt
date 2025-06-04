@@ -46,6 +46,14 @@ data class Nutrition(
     val nutrients: List<NutrientsItem>? = null
 )
 
+data class SearchResponse(
+    val results: List<Recipe> = emptyList(),
+    val offset: Int? = null,
+    val number: Int? = null,
+    val totalResults: Int? = null
+)
+
+
 data class AnalyzedInstructionsItem(val steps: List<StepsItem>? = null)
 
 data class StepsItem(val step: String? = null)

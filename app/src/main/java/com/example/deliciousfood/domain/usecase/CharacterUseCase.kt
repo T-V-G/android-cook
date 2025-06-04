@@ -25,3 +25,7 @@ class AddFavoriteToListUseCase(private val repo: CharactersRepository) {
 class UpdateFavoriteUseCase(private val repo: CharactersRepository) {
     fun execute(recipe: RecipesItem): Flow<Boolean> = repo.updateFavorite(recipe)
 }
+
+class SearchRecipesUseCase(private val repo: CharactersRepository) {
+    fun execute(query: String): Flow<List<RecipesItem>> = repo.searchRecipes(query)
+}

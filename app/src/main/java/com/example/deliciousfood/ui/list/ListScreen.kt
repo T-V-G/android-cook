@@ -63,7 +63,7 @@ fun Body(
 }
 
 @Composable
-private fun HomePoster(
+    internal fun HomePoster(
     recipe: RecipesItem,
     select: (RecipesItem) -> Unit ,
     clickFavorite: (RecipesItem) -> Unit ,
